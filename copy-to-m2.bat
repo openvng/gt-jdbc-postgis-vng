@@ -1,0 +1,2 @@
+copy .\target\gt-jdbc-oracle-vng-14.5.jar C:\Users\hckim\.m2\repository\org\geotools\jdbc\gt-jdbc-oracle-vng\14.5.2\gt-jdbc-oracle-vng-14.5.2.jar
+copy .\target\gt-jdbc-oracle-vng-14.5-sources.jar C:\Users\hckim\.m2\repository\org\geotools\jdbc\gt-jdbc-oracle-vng\14.5.2\gt-jdbc-oracle-vng-14.5.2-sources.jar
