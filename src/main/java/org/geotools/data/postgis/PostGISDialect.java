@@ -873,6 +873,9 @@ public class PostGISDialect extends BasicSQLDialect {
         overrides.put(Types.REAL, "NUMERIC");
     	  overrides.put(Types.DOUBLE, "NUMERIC");
     	  overrides.put(Types.FLOAT, "NUMERIC");
+        
+        overrides.put(Types.DATE, "VARCHAR");
+        overrides.put(Types.TIMESTAMP, "VARCHAR");
     }
 
     @Override
