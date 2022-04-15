@@ -936,7 +936,15 @@ public class PostGISDialect extends BasicSQLDialect {
                     // grab the geometry type
                     String geomType = CLASS_TO_TYPE_MAP.get(gd.getType().getBinding());
                     if (geomType == null) {
-                        geomType = "GEOMETRY";
+                      geomType = "GEOMETRY";
+                    } else if ("POINT".equals(geomType)) {
+                      geomType = "MULTIPOINT";
+                    } else if ("LINESTRING".equals(geomType)) {
+                      geomType = "MULTILINESTRING";
+                    } else if ("POLYGON".equals(geomType)) {
+                      geomType = "MULTIPOLYGON";
+                    } else {
+                      geomType = "GEOMETRY";
                     }
 
                     String sql = null;
